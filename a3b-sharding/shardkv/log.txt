@@ -1,0 +1,236 @@
+Test: servers miss configuration changes...
+testhzy111 
+Gid 100 ShardKV 0 start reconfigure 
+Gid 100 ShardKV 0 oldShards [0 0 0 0 0 0 0 0 0 0] newShards [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 0 reconfigure lock release, value 0, shards: [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 1 start reconfigure 
+Gid 100 ShardKV 1 oldShards [0 0 0 0 0 0 0 0 0 0] newShards [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 1 reconfigure lock release, value 0, shards: [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 2 start reconfigure 
+Gid 100 ShardKV 2 oldShards [0 0 0 0 0 0 0 0 0 0] newShards [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 2 reconfigure lock release, value 0, shards: [100 100 100 100 100 100 100 100 100 100] 
+Gid 100 ShardKV 2 handles &{0 d6OI5n5a-dIrZOnvMv5b Put 3327889131268176042 0} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 0 0x1400020f980} 0} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 0 0x1400020f980} 0} into log 
+Gid 100 ShardKV 2: Put shard: 8 key: 0 result shardData: d6OI5n5a-dIrZOnvMv5b 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 0 {0 d6OI5n5a-dIrZOnvMv5b Put 3327889131268176042 0}} 0} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 0 {0 d6OI5n5a-dIrZOnvMv5b Put 3327889131268176042 0}} 0} into log 
+Gid 100 ShardKV 0: Put shard: 8 key: 0 result shardData: d6OI5n5a-dIrZOnvMv5b 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 0 {0 d6OI5n5a-dIrZOnvMv5b Put 3327889131268176042 0}} 0} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 0 {0 d6OI5n5a-dIrZOnvMv5b Put 3327889131268176042 0}} 0} into log 
+Gid 100 ShardKV 1: Put shard: 8 key: 0 result shardData: d6OI5n5a-dIrZOnvMv5b 
+Gid 100 ShardKV 2 handles &{1 J-EWoZuDrpqpNEEBWuem Put 3327889131268176042 1} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 1 0x14000405100} 1} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 1 0x14000405100} 1} into log 
+Gid 100 ShardKV 2: Put shard: 9 key: 1 result shardData: J-EWoZuDrpqpNEEBWuem 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 1 {1 J-EWoZuDrpqpNEEBWuem Put 3327889131268176042 1}} 1} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 1 {1 J-EWoZuDrpqpNEEBWuem Put 3327889131268176042 1}} 1} into log 
+Gid 100 ShardKV 0: Put shard: 9 key: 1 result shardData: J-EWoZuDrpqpNEEBWuem 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 1 {1 J-EWoZuDrpqpNEEBWuem Put 3327889131268176042 1}} 1} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 1 {1 J-EWoZuDrpqpNEEBWuem Put 3327889131268176042 1}} 1} into log 
+Gid 100 ShardKV 1: Put shard: 9 key: 1 result shardData: J-EWoZuDrpqpNEEBWuem 
+Gid 100 ShardKV 2 handles &{2 krMjVT0ThgSqkjhMZyCt Put 3327889131268176042 2} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 2 0x140002ab200} 2} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 2 0x140002ab200} 2} into log 
+Gid 100 ShardKV 2: Put shard: 0 key: 2 result shardData: krMjVT0ThgSqkjhMZyCt 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 2 {2 krMjVT0ThgSqkjhMZyCt Put 3327889131268176042 2}} 2} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 2 {2 krMjVT0ThgSqkjhMZyCt Put 3327889131268176042 2}} 2} into log 
+Gid 100 ShardKV 0: Put shard: 0 key: 2 result shardData: krMjVT0ThgSqkjhMZyCt 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 2 {2 krMjVT0ThgSqkjhMZyCt Put 3327889131268176042 2}} 2} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 2 {2 krMjVT0ThgSqkjhMZyCt Put 3327889131268176042 2}} 2} into log 
+Gid 100 ShardKV 1: Put shard: 0 key: 2 result shardData: krMjVT0ThgSqkjhMZyCt 
+Gid 100 ShardKV 2 handles &{3 blgNbvIl9afG4sy0j4eO Put 3327889131268176042 3} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 3 0x140002a9040} 3} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 3 0x140002a9040} 3} into log 
+Gid 100 ShardKV 2: Put shard: 1 key: 3 result shardData: blgNbvIl9afG4sy0j4eO 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 3 {3 blgNbvIl9afG4sy0j4eO Put 3327889131268176042 3}} 3} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 3 {3 blgNbvIl9afG4sy0j4eO Put 3327889131268176042 3}} 3} into log 
+Gid 100 ShardKV 0: Put shard: 1 key: 3 result shardData: blgNbvIl9afG4sy0j4eO 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 3 {3 blgNbvIl9afG4sy0j4eO Put 3327889131268176042 3}} 3} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 3 {3 blgNbvIl9afG4sy0j4eO Put 3327889131268176042 3}} 3} into log 
+Gid 100 ShardKV 1: Put shard: 1 key: 3 result shardData: blgNbvIl9afG4sy0j4eO 
+Gid 100 ShardKV 2 handles &{4 92CdhykGXxTgrKsD3NV7 Put 3327889131268176042 4} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 4 0x1400041d1c0} 4} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 4 0x1400041d1c0} 4} into log 
+Gid 100 ShardKV 2: Put shard: 2 key: 4 result shardData: 92CdhykGXxTgrKsD3NV7 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 4 {4 92CdhykGXxTgrKsD3NV7 Put 3327889131268176042 4}} 4} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 4 {4 92CdhykGXxTgrKsD3NV7 Put 3327889131268176042 4}} 4} into log 
+Gid 100 ShardKV 0: Put shard: 2 key: 4 result shardData: 92CdhykGXxTgrKsD3NV7 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 4 {4 92CdhykGXxTgrKsD3NV7 Put 3327889131268176042 4}} 4} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 4 {4 92CdhykGXxTgrKsD3NV7 Put 3327889131268176042 4}} 4} into log 
+Gid 100 ShardKV 1: Put shard: 2 key: 4 result shardData: 92CdhykGXxTgrKsD3NV7 
+Gid 100 ShardKV 2 handles &{5 FUV5oikUQMsfsV1dfQqY Put 3327889131268176042 5} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 5 0x140003b9ac0} 5} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 5 0x140003b9ac0} 5} into log 
+Gid 100 ShardKV 2: Put shard: 3 key: 5 result shardData: FUV5oikUQMsfsV1dfQqY 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 5 {5 FUV5oikUQMsfsV1dfQqY Put 3327889131268176042 5}} 5} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 5 {5 FUV5oikUQMsfsV1dfQqY Put 3327889131268176042 5}} 5} into log 
+Gid 100 ShardKV 0: Put shard: 3 key: 5 result shardData: FUV5oikUQMsfsV1dfQqY 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 5 {5 FUV5oikUQMsfsV1dfQqY Put 3327889131268176042 5}} 5} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 5 {5 FUV5oikUQMsfsV1dfQqY Put 3327889131268176042 5}} 5} into log 
+Gid 100 ShardKV 1: Put shard: 3 key: 5 result shardData: FUV5oikUQMsfsV1dfQqY 
+Gid 100 ShardKV 2 handles &{6 rAsaZ_9lRu1hE1UkPWRR Put 3327889131268176042 6} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 6 0x140002aa780} 6} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 6 0x140002aa780} 6} into log 
+Gid 100 ShardKV 2: Put shard: 4 key: 6 result shardData: rAsaZ_9lRu1hE1UkPWRR 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 6 {6 rAsaZ_9lRu1hE1UkPWRR Put 3327889131268176042 6}} 6} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 6 {6 rAsaZ_9lRu1hE1UkPWRR Put 3327889131268176042 6}} 6} into log 
+Gid 100 ShardKV 0: Put shard: 4 key: 6 result shardData: rAsaZ_9lRu1hE1UkPWRR 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 6 {6 rAsaZ_9lRu1hE1UkPWRR Put 3327889131268176042 6}} 6} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 6 {6 rAsaZ_9lRu1hE1UkPWRR Put 3327889131268176042 6}} 6} into log 
+Gid 100 ShardKV 1: Put shard: 4 key: 6 result shardData: rAsaZ_9lRu1hE1UkPWRR 
+Gid 100 ShardKV 2 handles &{7 ZnzgLtJNVJ7ESJ-n6ACu Put 3327889131268176042 7} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 7 0x1400041cb00} 7} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 7 0x1400041cb00} 7} into log 
+Gid 100 ShardKV 2: Put shard: 5 key: 7 result shardData: ZnzgLtJNVJ7ESJ-n6ACu 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 7 {7 ZnzgLtJNVJ7ESJ-n6ACu Put 3327889131268176042 7}} 7} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 7 {7 ZnzgLtJNVJ7ESJ-n6ACu Put 3327889131268176042 7}} 7} into log 
+Gid 100 ShardKV 0: Put shard: 5 key: 7 result shardData: ZnzgLtJNVJ7ESJ-n6ACu 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 7 {7 ZnzgLtJNVJ7ESJ-n6ACu Put 3327889131268176042 7}} 7} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 7 {7 ZnzgLtJNVJ7ESJ-n6ACu Put 3327889131268176042 7}} 7} into log 
+Gid 100 ShardKV 1: Put shard: 5 key: 7 result shardData: ZnzgLtJNVJ7ESJ-n6ACu 
+Gid 100 ShardKV 2 handles &{8 dk3I_9YkUQQI39OnlbZe Put 3327889131268176042 8} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 8 0x140000dba80} 8} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 8 0x140000dba80} 8} into log 
+Gid 100 ShardKV 2: Put shard: 6 key: 8 result shardData: dk3I_9YkUQQI39OnlbZe 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 8 {8 dk3I_9YkUQQI39OnlbZe Put 3327889131268176042 8}} 8} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 8 {8 dk3I_9YkUQQI39OnlbZe Put 3327889131268176042 8}} 8} into log 
+Gid 100 ShardKV 0: Put shard: 6 key: 8 result shardData: dk3I_9YkUQQI39OnlbZe 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 8 {8 dk3I_9YkUQQI39OnlbZe Put 3327889131268176042 8}} 8} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 8 {8 dk3I_9YkUQQI39OnlbZe Put 3327889131268176042 8}} 8} into log 
+Gid 100 ShardKV 1: Put shard: 6 key: 8 result shardData: dk3I_9YkUQQI39OnlbZe 
+Gid 100 ShardKV 2 handles &{9 zFS27_-jqTeZRbbOth6Z Put 3327889131268176042 9} 
+Gid 100 ShardKV 2 read from applyCh {true {Put 3327889131268176042 9 0x1400041d480} 9} 
+Gid 100 ShardKV 2 commit {true {Put 3327889131268176042 9 0x1400041d480} 9} into log 
+Gid 100 ShardKV 2: Put shard: 7 key: 9 result shardData: zFS27_-jqTeZRbbOth6Z 
+Gid 100 ShardKV 0 read from applyCh {true {Put 3327889131268176042 9 {9 zFS27_-jqTeZRbbOth6Z Put 3327889131268176042 9}} 9} 
+Gid 100 ShardKV 0 commit {true {Put 3327889131268176042 9 {9 zFS27_-jqTeZRbbOth6Z Put 3327889131268176042 9}} 9} into log 
+Gid 100 ShardKV 0: Put shard: 7 key: 9 result shardData: zFS27_-jqTeZRbbOth6Z 
+Gid 100 ShardKV 1 read from applyCh {true {Put 3327889131268176042 9 {9 zFS27_-jqTeZRbbOth6Z Put 3327889131268176042 9}} 9} 
+Gid 100 ShardKV 1 commit {true {Put 3327889131268176042 9 {9 zFS27_-jqTeZRbbOth6Z Put 3327889131268176042 9}} 9} into log 
+Gid 100 ShardKV 1: Put shard: 7 key: 9 result shardData: zFS27_-jqTeZRbbOth6Z 
+Gid 100 ShardKV 2 handles &{0 3327889131268176042 10} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 10 0x140001aff20} 10} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 10 0x140001aff20} 10} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 8 key: 0 result shardData: d6OI5n5a-dIrZOnvMv5b 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 10 {0 3327889131268176042 10}} 10} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 10 {0 3327889131268176042 10}} 10} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 10 {0 3327889131268176042 10}} 10} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 10 {0 3327889131268176042 10}} 10} into log 
+Gid 100 ShardKV 2 handles &{1 3327889131268176042 11} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 11 0x1400039c8a0} 11} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 11 0x1400039c8a0} 11} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 9 key: 1 result shardData: J-EWoZuDrpqpNEEBWuem 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 11 {1 3327889131268176042 11}} 11} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 11 {1 3327889131268176042 11}} 11} into log 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 11 {1 3327889131268176042 11}} 11} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 11 {1 3327889131268176042 11}} 11} into log 
+Gid 100 ShardKV 2 handles &{2 3327889131268176042 12} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 12 0x140002cdb20} 12} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 12 0x140002cdb20} 12} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 0 key: 2 result shardData: krMjVT0ThgSqkjhMZyCt 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 12 {2 3327889131268176042 12}} 12} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 12 {2 3327889131268176042 12}} 12} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 12 {2 3327889131268176042 12}} 12} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 12 {2 3327889131268176042 12}} 12} into log 
+Gid 100 ShardKV 2 handles &{3 3327889131268176042 13} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 13 0x140002cc2c0} 13} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 13 0x140002cc2c0} 13} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 1 key: 3 result shardData: blgNbvIl9afG4sy0j4eO 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 13 {3 3327889131268176042 13}} 13} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 13 {3 3327889131268176042 13}} 13} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 13 {3 3327889131268176042 13}} 13} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 13 {3 3327889131268176042 13}} 13} into log 
+Gid 100 ShardKV 2 handles &{4 3327889131268176042 14} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 14 0x1400035e1e0} 14} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 14 0x1400035e1e0} 14} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 2 key: 4 result shardData: 92CdhykGXxTgrKsD3NV7 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 14 {4 3327889131268176042 14}} 14} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 14 {4 3327889131268176042 14}} 14} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 14 {4 3327889131268176042 14}} 14} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 14 {4 3327889131268176042 14}} 14} into log 
+Gid 100 ShardKV 2 handles &{5 3327889131268176042 15} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 15 0x1400035e5a0} 15} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 15 0x1400035e5a0} 15} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 3 key: 5 result shardData: FUV5oikUQMsfsV1dfQqY 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 15 {5 3327889131268176042 15}} 15} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 15 {5 3327889131268176042 15}} 15} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 15 {5 3327889131268176042 15}} 15} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 15 {5 3327889131268176042 15}} 15} into log 
+Gid 100 ShardKV 2 handles &{6 3327889131268176042 16} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 16 0x14000267300} 16} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 16 0x14000267300} 16} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 4 key: 6 result shardData: rAsaZ_9lRu1hE1UkPWRR 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 16 {6 3327889131268176042 16}} 16} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 16 {6 3327889131268176042 16}} 16} into log 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 16 {6 3327889131268176042 16}} 16} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 16 {6 3327889131268176042 16}} 16} into log 
+Gid 100 ShardKV 2 handles &{7 3327889131268176042 17} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 17 0x1400026e540} 17} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 17 0x1400026e540} 17} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 5 key: 7 result shardData: ZnzgLtJNVJ7ESJ-n6ACu 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 17 {7 3327889131268176042 17}} 17} 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 17 {7 3327889131268176042 17}} 17} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 17 {7 3327889131268176042 17}} 17} into log 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 17 {7 3327889131268176042 17}} 17} into log 
+Gid 100 ShardKV 2 handles &{8 3327889131268176042 18} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 18 0x140002673e0} 18} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 18 0x140002673e0} 18} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 6 key: 8 result shardData: dk3I_9YkUQQI39OnlbZe 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 18 {8 3327889131268176042 18}} 18} 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 18 {8 3327889131268176042 18}} 18} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 18 {8 3327889131268176042 18}} 18} into log 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 18 {8 3327889131268176042 18}} 18} into log 
+Gid 100 ShardKV 2 handles &{9 3327889131268176042 19} 
+Gid 100 ShardKV 2 read from applyCh {true {Get 3327889131268176042 19 0x140002e7640} 19} 
+Gid 100 ShardKV 2 commit {true {Get 3327889131268176042 19 0x140002e7640} 19} into log 
+hihihi 
+hihihi222 
+Gid 100 ShardKV 2: Get shard: 7 key: 9 result shardData: zFS27_-jqTeZRbbOth6Z 
+Gid 100 ShardKV 1 read from applyCh {true {Get 3327889131268176042 19 {9 3327889131268176042 19}} 19} 
+Gid 100 ShardKV 1 commit {true {Get 3327889131268176042 19 {9 3327889131268176042 19}} 19} into log 
+Gid 100 ShardKV 0 read from applyCh {true {Get 3327889131268176042 19 {9 3327889131268176042 19}} 19} 
+Gid 100 ShardKV 0 commit {true {Get 3327889131268176042 19 {9 3327889131268176042 19}} 19} into log 
+testhzy222 
+testhzy333 
+Gid 100 ShardKV 1 start reconfigure 
+Gid 100 ShardKV 1 oldShards [100 100 100 100 100 100 100 100 100 100] newShards [102 102 102 102 102 102 102 102 102 102] 
+Gid 100 ShardKV 1 reconfigure lock release, value 0, shards: [102 102 102 102 102 102 102 102 102 102] 
+Gid 102 ShardKV 1 start reconfigure 
+Gid 102 ShardKV 1 oldShards [0 0 0 0 0 0 0 0 0 0] newShards [102 102 102 102 102 102 102 102 102 102] 
+Gid 102 ShardKV 1 reconfigure lock release, value 0, shards: [102 102 102 102 102 102 102 102 102 102] 
+Gid 102 ShardKV 2 start reconfigure 
+Gid 102 ShardKV 2 oldShards [0 0 0 0 0 0 0 0 0 0] newShards [102 102 102 102 102 102 102 102 102 102] 
+Gid 102 ShardKV 2 reconfigure lock release, value 0, shards: [102 102 102 102 102 102 102 102 102 102] 
+Gid 102 ShardKV 2 handles &{0 3327889131268176042 20} 
+Gid 102 ShardKV 2 read from applyCh {true {Get 3327889131268176042 20 0x140002e7180} 0} 
+Gid 102 ShardKV 2 commit {true {Get 3327889131268176042 20 0x140002e7180} 0} into log 
+hihihi 
+hihihi222 
+Gid 102 ShardKV 1 read from applyCh {true {Get 3327889131268176042 20 {0 3327889131268176042 20}} 0} 
+Gid 102 ShardKV 1 commit {true {Get 3327889131268176042 20 {0 3327889131268176042 20}} 0} into log 
+--- FAIL: TestMissChange4B (0.60s)
+    test_test.go:16: Get(0): expected:
+        d6OI5n5a-dIrZOnvMv5b
+        received:
+FAIL
+exit status 1
+FAIL	cs651/a3b-sharding/shardkv	0.817s
