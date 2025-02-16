@@ -1,0 +1,30 @@
+
+Node 1 -- B:2 L:3 2 -> 1 3
+Node 0 -- B:1 L:4 1 -> 0 2
+Node 4 -- B:1 L:4 1 -> 4 1
+become
+Node 1 -- B:3 L:1 3
+Node 0 -- B:2 L:1 3
+Node 4 -- B:2 L:1 3
+Node 2 -- B:2 L:3 2
+Node 3 -- B:2 L:3 2
+
+
+
+
+1 2
+
+
+Node 0 -- B:1 L:2 1
+Node 1 -- B:1 L:2 1
+Node 2 -- B:1 L:2 1
+
+0 2 split
+Node 0 -- B:2 L:0 2
+Node 1 -- B:1 L:0 2
+Node 2 -- B:1 L:2 1
+
+1 2 split
+Node 0 -- B:1 L:1 2
+Node 1 -- B:2 L:1 2
+Node 2 -- B:1 L:2 1
